@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title></title>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <style>
+            body {
+                margin: 0;
+                color: white;
+                font-family: Arial, sans-serif;
+                background-color: black;
+            }
+
+            #introduction {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #2a0036;
+                background-image: radial-gradient(circle, rgba(255, 100, 100, 0.3) 5%, transparent 10%);
+                background-size: 30px 30px;
+            }
+
+            #introduction-container {
+                margin: 0 250px;
+            }
+
+            #introduction-container-navigation {
+                font-size: 1.5rem;
+                width: fit-content;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+
+            #navbar {
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+                border-radius: 10px;
+            }
+
+            #navbar a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.1rem;
+                transition: color 0.3s;
+            }
+
+            #navbar a:hover {
+                color: #ff6464;
+            }
+
+            #introduction-container-hello {
+                font-size: 1.5rem;
+                min-height: 400px;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+
+            #introduction-container-hello-greeting-text {
+                padding-top: 30px;
+            }
+
+            .text-color-red {
+                margin-left: -25px;
+                color: #ff6464;
+            }
+
+            #introduction-container-hello-description-text {
+                line-height: 45px;
+                padding: 5px 25px 0 25px;
+                font-size: 1.25rem;
+            }
+
+            #introduction-container-hello-image {
+                display: flex;
+                justify-content: right;
+            }
+
+            #introduction-container-hello-image img {
+                margin: 0 -10px -10px 0;
+                max-width: 250px;
+                height: auto;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="introduction">
+            <div id="introduction-container">
+                <div id="introduction-container-navigation">
+                    <nav id="navbar">
+                        <a href="#experience">Doświadczenie</a> |
+                        <a href="" title="Sekcja w przygotowaniu">Osiągnięcia</a> |
+                        <a href="" title="Sekcja w przygotowaniu">Kariera</a>
+                    </nav>
+                </div>
+                <div id="introduction-container-hello">
+                    <p id="introduction-container-hello-greeting-text">
+                        <span class="text-color-red">Hej!</span>
+                    </p>
+                    <p id="introduction-container-hello-description-text">
+                        Interesuję się tworzeniem produktów cyfrowych,
+                        a moja przygoda z kodem rozpoczęła się od samodzielnej nauki języka Java.
+                    </p>
+                    <div id="introduction-container-hello-image">
+                        <img src="https://avatars.githubusercontent.com/u/125679202?v=4"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience">
+            <div id="experience-container">
+                <div id="experience-header">
+                    <p>
+                        <span style="margin-left:-45px;font-size:1.5rem;color:#ff6464;">
+                            Poniższe projekty to wynik praktycznej pracy z technologiami.
+                        </span>
+                        </br>
+                        <span style="font-size:1.25rem;color:#ffb3b3;">
+                            Są rezultatem nauki przez praktykę, rozwiązywania problemów 
+                            oraz realizowania celów.</br>
+                            Dzięki temu każdy z nich to efekt realnego zastosowania zdobytej wiedzy.</br>
+                        </span>
+                    </p>
+                </div>
+                <div id="projects-container">
+                    <div class="project-container">
+                        <div>
+                            <p>Spiders Invasion</p>                 
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_CmEdrN1des?si=MJUCnToMPVTQqdvu" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="link-to-repository">
+                                    <a href="https://github.com/napuial/spiders-invasion">
+                                        Sprawdź kod oraz README.md
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-description-container">
+                            <p class="project-description">
+                                Wybieraj prawidłowe koordynaty. 
+                                Pokonaj trzy rodzaje wrogów i zatrzymaj inwazję paskudnych pająków /\\O.O//\</br>
+                                </br>
+                                - Losowe rozstawienie wrogów po każdym uruchomieniu</br>
+                                - Wykorzystanie funkcjonalności enum do generowania różnych typów przeciwników</br>
+                                - Celowanie we wrogów przy pomocy walidowanych danych wejściowych</br>
+                                - Reakcja na powtórzenia, trafione oraz chybione strzały</br>
+                                - Wykorzystanie animacji w projekcie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects-separator"></div>
+                    <div class="project-container">
+                        <div>
+                            <p>Guess the Spider</p>                 
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xSY-PrRt3zs?si=c-gmqwuAssFmLYTa" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="link-to-repository">
+                                    <a href="https://github.com/napuial/guess-the-spider">
+                                        Sprawdź kod oraz README.md
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-description-container">
+                            <p class="project-description">
+                                Odgadnij nazwy pająków czychających w mroku /\\O.O//\</br>
+                                </br>
+                                - Wykorzystanie narzędzia wspierającego zarządzanie projektem, zależnościami oraz automatyzację budowania aplikacji Maven</br>
+                                - Zastosowanie JUnit do przeprowadzenia testów jednostkowych</br>
+                                - Wprowadzenie w projekcie funkcjonalności Locale, co udostępnia rozgrywkę w dwóch językach</br>
+                                - Wyodrębnienie treści, jako zasobów do zewnętrzych plików .txt i zarządzanie nimi z tego poziomu</br>
+                                - Bieżąca informacja dla użytkownika o ilości popełnionych błędów oraz podgląd popełnionych błędów
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects-separator"></div>
+                    <div class="project-container">
+                        <div>
+                            <p>Spider Posters</p>                 
+                            <div class="video-container">
+                                <a href="https://sites.google.com/view/spider-posters" title="Dokumentacja funkcjonalna projektu - Spider Posters">
+                                    <img width="560" height="315" 
+                                    src="https://raw.githubusercontent.com/napuial/spider-posters/e7af7afab6f587f7db8f05c9ce1b118874d2e497/preview/1.jpeg"/>
+                                </a>
+                                <div class="link-to-repository" >
+                                    <a href="https://github.com/napuial/spider-posters">
+                                        Sprawdź kod oraz README.md
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-description-container">
+                            <p class="project-description">
+                                Aplikacja webowa sklepu z plakatami /\\O.O//\</br>
+                                </br>
+                                - Lokalne uruchomienie serwera</br>
+                                - Wykorzystanie Gradle oraz Spring Boota w budowaniu projektu</br>
+                                - Zastosowanie rozwiązania bazodanowego w postaci H2 Database</br>
+                                - Wykorzystanie silnika szablonów Thymeleaf
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
