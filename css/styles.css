@@ -54,3 +54,50 @@
 .link-to-repository a:hover {
     color: #ff6464;
 }
+
+/* achievements */
+
+#achievements {
+    height: 100vh;
+    background: #2a0036;
+    padding: 40px 90px 120px 90px;
+}
+
+#achievements-header {
+    padding-bottom: 30px;
+}
+
+#achievements-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient(circle, rgba(255, 100, 100, 0.3) 5%, transparent 10%);
+    background-size: 30px 30px;
+    border-radius: 10px;
+}
+
+.section-header {
+    display: flex; 
+    flex-direction: column;
+    text-align: right;
+}
+
+.section-header-style1 {
+    margin-right: -45px;
+    font-size:1.5rem;
+    color:#ff6464;
+}
+
+.section-header-style2 {
+    font-size:1.25rem;
+    color:#ffb3b3;
+}
+
+.certificate-container {
+    margin: 45px auto;
+    width: 805px;
+    height: 535px;
+    background-color: black;
+    text-align: center;
+}
